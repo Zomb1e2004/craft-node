@@ -11,6 +11,7 @@
     -   **Simple:** Un único punto de entrada ideal para scripts rápidos o microservicios mínimos.
     -   **Modular:** Una estructura robusta y escalable que separa controladores, servicios, modelos y rutas (basada en el patrón de diseño por módulos).
 -   **Configuración Automática:** Genera archivos `package.json` y `tsconfig.json` preconfigurados.
+-   **Interfaz Visual Mejorada:** Uso de la dependencia `boxen` para mostrar paneles informativos atractivos en terminal.
 -   **Instalación Rápida:** Posibilidad de instalar dependencias y arrancar el proyecto inmediatamente tras la creación.
 
 ## 🛠️ Requisitos
