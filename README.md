@@ -20,36 +20,16 @@
 
 ## 🚀 Instalación y Uso
 
-### Clonar el repositorio y preparar la CLI
-
-1.  Clona este repositorio:
-    ```bash
-    git clone https://github.com/tu-usuario/craft-node.git
-    cd craft-node
-    ```
-
-2.  Instala las dependencias del generador:
-    ```bash
-    npm install
-    ```
-
-3.  Compila el proyecto:
-    ```bash
-    npm run build
-    ```
-
-### Ejecutar Craft Node
-
-Para iniciar el asistente de creación, simplemente ejecuta:
+Simplemente instala globalmente el package
 
 ```bash
-npm start
+npm install -g craft-node
 ```
 
-O si prefieres usarlo de forma global (tras realizar un `npm link`):
+¡Abre tu terminal de preferencia y disfruta!
 
 ```bash
-craft-node
+> craft-node
 ```
 
 ## 📂 Estructura de Plantillas
@@ -59,11 +39,6 @@ El proyecto utiliza un sistema de plantillas flexible ubicado en `src/templates`
 -   **express/**: Plantillas base para aplicaciones que utilizan el framework Express.
 -   **nodejs/**: Plantillas para aplicaciones Node.js puras (sin frameworks web).
 -   **modular/**: Estructura de carpetas avanzada que incluye módulos de ejemplo (ej. productos) con lógica separada por capas (Controller, Service, Repository, etc.).
-
-## 📝 Scripts Disponibles
-
--   `npm start`: Ejecuta el generador directamente usando `ts-node`.
--   `npm run build`: Compila el código fuente de TypeScript a JavaScript en la carpeta `dist/`.
 
 ## 📄 Licencia
 
