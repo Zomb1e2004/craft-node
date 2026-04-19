@@ -1,0 +1,10 @@
+import { ProductRepository } from "./product.repository";
+import type { Product } from "./product.model";
+
+export class ProductService {
+  private readonly products = new ProductRepository();
+
+  getAll(): Product[] {
+    return this.products.findAll();
+  }
+}

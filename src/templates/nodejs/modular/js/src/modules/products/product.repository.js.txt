@@ -1,0 +1,9 @@
+const products = [{ id: "1", name: "Producto demo" }];
+
+class ProductRepository {
+  findAll() {
+    return products;
+  }
+}
+
+module.exports = { ProductRepository };

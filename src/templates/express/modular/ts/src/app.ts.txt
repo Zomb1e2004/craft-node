@@ -1,0 +1,14 @@
+import express from "express";
+import { registerRoutes } from "./modules";
+import { requestLogger } from "./shared/middlewares";
+
+export function createApp() {
+  const app = express();
+  app.use(express.json());
+  app.use(requestLogger);
+  app.get("/", (_req, res) => {
+    res.type("text").send("API modular · Craft Node");
+  });
+  registerRoutes(app);
+  return app;
+}

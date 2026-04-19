@@ -1,0 +1,14 @@
+const { ProductController } = require("./product.controller");
+
+const controller = new ProductController();
+
+function tryProductRoutes(req, res) {
+  const path = (req.url && req.url.split("?")[0]) || "";
+  if (req.method === "GET" && path === "/api/products") {
+    controller.list(req, res);
+    return true;
+  }
+  return false;
+}
+
+module.exports = { tryProductRoutes };

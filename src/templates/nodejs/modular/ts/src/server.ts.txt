@@ -1,0 +1,8 @@
+import http from "http";
+import { handleRequest } from "./app";
+import { env } from "./shared/config/env";
+
+const server = http.createServer(handleRequest);
+server.listen(env.port, () => {
+  console.log("Servidor corriendo en http://localhost:" + env.port);
+});

@@ -1,0 +1,3 @@
+export function jsonMessage(payload: unknown): string {
+  return JSON.stringify(payload);
+}

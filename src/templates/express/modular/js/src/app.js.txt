@@ -1,0 +1,16 @@
+const express = require("express");
+const { registerRoutes } = require("./modules");
+const { requestLogger } = require("./shared/middlewares");
+
+function createApp() {
+  const app = express();
+  app.use(express.json());
+  app.use(requestLogger);
+  app.get("/", (_req, res) => {
+    res.type("text").send("API modular · Craft Node");
+  });
+  registerRoutes(app);
+  return app;
+}
+
+module.exports = { createApp };

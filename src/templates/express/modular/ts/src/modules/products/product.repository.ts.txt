@@ -1,0 +1,9 @@
+import type { Product } from "./product.model";
+
+const products: Product[] = [{ id: "1", name: "Producto demo" }];
+
+export class ProductRepository {
+  findAll(): Product[] {
+    return products;
+  }
+}

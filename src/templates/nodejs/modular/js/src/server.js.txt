@@ -1,0 +1,8 @@
+const http = require("http");
+const { handleRequest } = require("./app");
+const { env } = require("./shared/config/env");
+
+const server = http.createServer(handleRequest);
+server.listen(env.port, () => {
+  console.log("Servidor corriendo en http://localhost:" + env.port);
+});

@@ -1,0 +1,16 @@
+import type { IncomingMessage, ServerResponse } from "http";
+import { ProductController } from "./product.controller";
+
+const controller = new ProductController();
+
+export function tryProductRoutes(
+  req: IncomingMessage,
+  res: ServerResponse,
+): boolean {
+  const path = req.url?.split("?")[0] ?? "";
+  if (req.method === "GET" && path === "/api/products") {
+    controller.list(req, res);
+    return true;
+  }
+  return false;
+}

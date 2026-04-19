@@ -1,0 +1,13 @@
+const { ProductRepository } = require("./product.repository");
+
+class ProductService {
+  constructor() {
+    this.products = new ProductRepository();
+  }
+
+  getAll() {
+    return this.products.findAll();
+  }
+}
+
+module.exports = { ProductService };

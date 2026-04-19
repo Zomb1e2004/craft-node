@@ -1,0 +1,3 @@
+export function isValidProductId(id: string): boolean {
+  return id.trim().length > 0;
+}

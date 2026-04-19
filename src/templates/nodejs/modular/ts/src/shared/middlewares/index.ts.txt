@@ -1,0 +1,2 @@
+/** Punto de partida para middlewares HTTP sin framework. */
+export function noop(): void {}

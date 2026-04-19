@@ -1,0 +1,42 @@
+{
+  "name": "craft-node",
+  "version": "1.0.0",
+  "description": "Herramienta CLI para automatizar la creación y configuración inicial de proyectos Node.js, ofreciendo estructuras de plantilla flexibles.",
+  "main": "dist/index.js",
+  "bin": {
+    "craft-node": "dist/index.js"
+  },
+  "scripts": {
+    "start": "npx ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "keywords": [
+    "Node.js",
+    "CLI",
+    "generator",
+    "node",
+    "templates",
+    "express",
+    "TypeScript",
+    "JavaScript",
+    "architecture",
+    "modular"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "files": [
+    "dist",
+    "src/templates"
+  ],
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/prompts": "^2.4.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}

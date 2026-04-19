@@ -1,0 +1,5 @@
+function isValidProductId(id) {
+  return id.trim().length > 0;
+}
+
+module.exports = { isValidProductId };

@@ -1,0 +1,11 @@
+import type { IncomingMessage, ServerResponse } from "http";
+import { tryProductRoutes } from "./products/product.routes";
+
+export function dispatchModules(
+  req: IncomingMessage,
+  res: ServerResponse,
+): void {
+  if (tryProductRoutes(req, res)) return;
+  res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
+  res.end("Not found");
+}

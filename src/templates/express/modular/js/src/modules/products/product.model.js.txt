@@ -1,0 +1,5 @@
+/**
+ * @typedef {{ id: string, name: string }} Product
+ */
+
+module.exports = {};

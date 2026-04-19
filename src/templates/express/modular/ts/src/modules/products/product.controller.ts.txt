@@ -1,0 +1,10 @@
+import type { Request, Response } from "express";
+import { ProductService } from "./product.service";
+
+const productService = new ProductService();
+
+export class ProductController {
+  list(_req: Request, res: Response): void {
+    res.json(productService.getAll());
+  }
+}
