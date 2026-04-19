@@ -80,7 +80,7 @@ async function main() {
   const projectAnswer = await prompts({
     type: "text",
     name: "projectName",
-    message: "Nombre",
+    message: "Nombre de proyecto",
     validate: (value: string) =>
       value.trim().length > 0 || "Escribe un nombre.",
   });
